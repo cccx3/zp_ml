@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../static/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Zizek/JBP Bot</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,8 +19,8 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+      <div id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -32,15 +32,22 @@
       </div>
     </nav>
 
-    <main role="main" class="container" style="width: 50%;">
+    <main role="main" class="container" style="width: 70%;">
+
+
 
       <div class="starter-template">
-        <h1>Zizek/Peterson Bot</h1>
-        <p class="lead">Using the power of Machine Learning, this bot tells you if your views align more with Slavoj Zizek or Jordan B Peterson, based on a text sample. <br><br> Enter text below to find out who your spirit philosopher is:</p>
+
+        <h1 style ="text-align:center;" ><b>Zizek/JBP Bot</b></h1>
+        <p><img width="45%" src="../static/assets/img/jbp_zizek.jpg"></p>
+
+        <p class="lead">This AI decides your alignment between Slavoj Žižek and Jordan B Peterson. <br>
+        <p class="lead" style="text-align:center;"> Enter text below to find out who your spirit philosopher is:</p>
       </div>
 
       <form method="post">
-        <textarea style="width: 85%;" class="form-control" id="exampleFormControlTextarea1" name="text_form" rows="3">Enter text here</textarea>
+        <textarea style="width: 80%;" class="form-control" id="exampleFormControlTextarea1" name="text_form" rows="3">Enter text here</textarea>
+        <br>
         <div style="text-align:center">
           <input type="submit" value="Submit"/>
         </div>
