@@ -8,16 +8,13 @@ model = pickle.load( open( "nb_vect.p", "rb" ) )
 app = Flask(__name__)
 app.secret_key = "super secret key"
 
-#class ItemTable(Table):
-#    name = Col('show_name')
-#    description = Col('CriticR')
 
 @app.route('/', methods=["GET","POST"])
 def homepage():
 
     if request.method == "POST":
         pred_arr = model.predict_proba([request.form['text_form']])
-    
+
         pred_class = np.argmax(pred_arr[0])
 
         if pred_class == 0:
